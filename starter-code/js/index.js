@@ -7,13 +7,11 @@ function deleteItem(e){
 }
 
 function getPriceByProduct(itemNode){
-  let price = itemNode.querySelector(".price").innerHTML;
-  let pricesansdollar = Number(price.substr(1));
-  let quantity = itemNode.querySelector(".quantity").value
+  let price = itemNode.querySelector(".price"); // missing something
+  let pricesansdollar = price.substr(1);
+  let quantity = itemNode.querySelector(".quantity").value // missing something
   let totalPrice = pricesansdollar * quantity
-
   return totalPrice
-
 }
 
 function updatePriceByProduct(productPrice, index){
